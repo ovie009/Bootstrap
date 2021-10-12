@@ -8,52 +8,52 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Basic Buttons -->
-    <h2 class="display-6">Basic Buttons</h2>
-    <Button class="btn">Basic Buttons</Button>
-    <Button class="btn btn-primary">Primary Button</Button>
-    <Button class="btn btn-secondary">Secondary Button</Button>
-    <Button class="btn btn-muted">Muted Button</Button>
-    <Button class="btn btn-info">Info Button</Button>
-    <Button class="btn btn-warning">Warning Button</Button>
-    <Button class="btn btn-success">Success Button</Button>
-    <Button class="btn btn-dark">Dark Button</Button>
-    <Button class="btn btn-light">Light Button</Button>
-    <Button class="btn btn-link">Link Button</Button>
+    <h1 class="display-4">Utility Classes</h1>
+    <!-- Margin and Padding -->
+    <h2 class="display-6">Margin and Padding</h2>
+    <!-- adding margin and padding in all direction around element -->
+    <div class="bg-info m-1 p-1">Small Margin and Small Padding</div>
+    <div class="bg-info m-1 p-5">Small Margin and Large Padding</div>
+    <div class="bg-info m-5 p-1">Large Margin and Small Padding</div>
+    <div class="bg-info m-5 p-5">Large Margin and Large Padding</div>
+    <!-- adding margin and padding in both top and bottom -->
+    <div class="bg-secondary my-1 py-1">Small margin and padding in top and bottom</div>
+    <!-- adding margin and padding in both left and right -->
+    <div class="bg-secondary mx-5 px-5">Large margin and padding in top and bottom</div>
+    <!-- adding margin and padding in top and bottom -->
+    <div class="text-light text-center bg-success mt-1 mb-5 pt-5 pb-1">Small margin top, Large margin bottom, large padding top and small padding bottom</div>
+    <!-- adding margin and padding in left and right -->
+    <div class="text-light bg-danger ms-3 me-1 ps-5 pe-1">medium margin left, Small margin Right, large padding left and small padding right</div>
 
-    <!-- anchor tags/Links as Buttons -->
+    <!-- Borders -->
     <br><br>
-    <h2 class="display-6">Links as Buttons</h2>
-    <a href="#" class="btn btn-danger">Link styled as a button</a>
+    <div class="m-3 p-3 border">Default Border</div>
+    <div class="m-3 p-3 border-primary border">Default Border</div>
+    <div class="m-3 p-3 border-primary border-1 border">Default Border</div>
+    <div class="m-3 p-3 border-primary border-3 border">Default Border</div>
+    <div class="m-3 p-3 border-primary border-5 border">Default Border</div>
+    <div class="text-danger m-3 p-3 border-danger border rounded border">Default Border</div>
+    <div class="m-3 p-3 border-success border rounded-pill">Default Border</div>
+    <div class="m-3 p-3 border-success border-start border-4">Default Border</div>
+    <div class="m-3 p-3 border-secondary border-end border-4">Default Border</div>
+    <div class="m-3 p-3 border-warning border-bottom border-top border-2">Default Border</div>
+    <div class="text-light m-3 p-3 rounded-pill border-4 bg-info">Default Border</div>
 
-    <!-- Button Sizes -->
+    <!-- Box Shadow -->
     <br><br>
-    <h2 class="display-6">Button sizes</h2>
-    <Button class="btn btn-lg btn-info">Large Info Button</Button>
-    <Button class="btn btn-sm btn-secondary">Small Secondary Button</Button>
+    <div class="m-3 p-3 shadow-sm">Small box Shadow</div>
+    <div class="m-3 p-3 shadow">Large box Shadow</div>
 
-    <!-- Button Styles -->
+    <!-- Font Weight -->
     <br><br>
-    <h2 class="display-6">Button Styles</h2>
-    <button class="btn btn-outline-danger btn-lg">Large Danger Warning Button</button>
-    <button class="btn btn-outline-secondary btn-sm">Small Secondary Button</button>
-    <button class="btn btn-outline-success">Success Outline Button</button>
-
-    <!-- button Groups -->
-    <br><br>
-    <h2 class="display-6">Button Groups</h2>
-    <div class="btn-group">
-        <a href="#" class="btn btn-outline-primary">Button 1</a>
-        <a href="#" class="btn btn-outline-secondary">Button 2</a>
-        <a href="#" class="btn btn-outline-success">Button 3</a>
-    </div>
-
-    <!-- Disabled Buttons -->
-    <h2 class="display-6">Disabled Buttons</h2>
-    <button class="btn btn-info">Normal Info Button</button>
-    <button class="btn btn-info" disabled>Disabled Info Button</button>
-    <button class="btn btn-outline-dark">Normal Outlined Dark Button</button>
-    <button class="btn btn-outline-dark" disabled>Disabled Outlined Dark Button</button>
+    <p class="fw-bolder">Bolder Text</p>
+    <p class="fw-bold">Bold Text</p>
+    <p>normal Text</p>
+    <p class="fw-light">Light Text</p>
+    <p class="fw-bolder fst-italic">Bolder Italic Text</p>
+    <p class="fw-bold fst-italic">Bold Italic Text</p>
+    <p class="fst-italic">normal Italic Text</p>
+    <p class="fw-light fst-italic">Light Italic Text</p>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
