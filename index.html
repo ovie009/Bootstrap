@@ -8,104 +8,152 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 class="display-4">Utility Classes</h1>
-    <!-- Margin and Padding -->
-    <h2 class="display-6">Margin and Padding</h2>
-    <!-- adding margin and padding in all direction around element -->
-    <div class="bg-info m-1 p-1">Small Margin and Small Padding</div>
-    <div class="bg-info m-1 p-5">Small Margin and Large Padding</div>
-    <div class="bg-info m-5 p-1">Large Margin and Small Padding</div>
-    <div class="bg-info m-5 p-5">Large Margin and Large Padding</div>
-    <!-- adding margin and padding in both top and bottom -->
-    <div class="bg-secondary my-1 py-1">Small margin and padding in top and bottom</div>
-    <!-- adding margin and padding in both left and right -->
-    <div class="bg-secondary mx-5 px-5">Large margin and padding in top and bottom</div>
-    <!-- adding margin and padding in top and bottom -->
-    <div class="text-light text-center bg-success mt-1 mb-5 pt-5 pb-1">Small margin top, Large margin bottom, large padding top and small padding bottom</div>
-    <!-- adding margin and padding in left and right -->
-    <div class="text-light bg-danger ms-3 me-1 ps-5 pe-1">medium margin left, Small margin Right, large padding left and small padding right</div>
+    <!-- Flex -->
+    <h1 class="display-4">Flex</h1>
 
-    <!-- Borders -->
-    <br><br>
-    <h2 class="display-6">Borders</h2>
-    <div class="m-3 p-3 border">Default Border</div>
-    <div class="m-3 p-3 border-primary border">Default Border</div>
-    <div class="m-3 p-3 border-primary border-1 border">Default Border</div>
-    <div class="m-3 p-3 border-primary border-3 border">Default Border</div>
-    <div class="m-3 p-3 border-primary border-5 border">Default Border</div>
-    <div class="text-danger m-3 p-3 border-danger border-3 border rounded">Default Border</div>
-    <div class="m-3 p-3 border-success border rounded-pill">Default Border</div>
-    <div class="m-3 p-3 border-success border-start border-4">Default Border</div>
-    <div class="m-3 p-3 border-secondary border-end border-4">Default Border</div>
-    <div class="m-3 p-3 border-warning border-bottom border-top border-2">Default Border</div>
-    <div class="text-light m-3 p-3 rounded-pill border-4 bg-info">Default Border</div>
+    <!-- Enable Flex Behaviours -->
+    <!-- <div class="d-flex p-2 bd-highlight bg-info">Flexbox Container!</div> -->
+    <!-- <div class="d-flex p-2 bd-highlight bg-success">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, sequi!</div> -->
+    <div class="d-flex p-2 bd-highlight">I'm a flexbox container! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate asperiores fuga neque, reiciendis aut quaerat at accusamus quam rem ipsam blanditiis, vero nam odit. Minima laboriosam eveniet assumenda alias nesciunt!</div>
+    
+    <div class="d-inline-flex p-2 bd-highlight">I'm a flexbox container! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate asperiores fuga neque, reiciendis aut quaerat at accusamus quam rem ipsam blanditiis, vero nam odit. Minima laboriosam eveniet assumenda alias nesciunt!</div>
 
-    <!-- Box Shadow -->
-    <br><br>
-    <h2 class="display-6">Box Shadow</h2>
-    <div class="m-3 p-3 shadow-sm">Small box Shadow</div>
-    <div class="m-3 p-3 shadow">Large box Shadow</div>
-
-    <!-- Font-->
-    <br><br>
-    <h2 class="display-6">Font</h2>
-    <p class="fw-bolder">Bolder Text</p>
-    <p class="fw-bold">Bold Text</p>
-    <p class="fw-normal">
-        normal Text
-        <span class="fw-lighter">Lighter Text</span>
-    </p>
-    <p class="fw-light">
-        Light Text       
-    </p>
-    <p class="fw-bolder fst-italic">Bolder Italic Text</p>
-    <p class="fw-bold fst-italic">Bold Italic Text</p>
-    <p class="fst-italic">normal Italic Text</p>
-    <p class="fw-light fst-italic">Light Italic Text</p>
-    <p class="fs-1">Lorem, ipsum dolor.</p>
-    <p class="fs-2">Lorem, ipsum dolor.</p>
-    <p class="fs-3">Lorem, ipsum dolor.</p>
-    <p class="fs-4">Lorem, ipsum dolor.</p>
-    <p class="fs-5">Lorem, ipsum dolor.</p>
-    <p class="fs-6">Lorem, ipsum dolor.</p>
-
-    <!-- Text Manipulation -->
-    <br><br>
-    <h2 class="display-6">Text</h2>
-    <p class="text-end">Lorem ipsum dolor sit amet.</p>
-    <p class="text-center">Lorem ipsum dolor sit amet.</p>
-    <p class="text-start">Lorem ipsum dolor sit amet.</p>
-    <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
-    <a href="#" class="text-decoration-line-through">Lorem, ipsum.</a>
-    <a href="#">Lorem, ipsum.</a>
-    <span class="text-decoration-underline">Lorem, ipsum.</span>
-    <p class="text-lg-end text-sm-center">Lorem ipsum dolor sit amet.</p>
-
-    <div class="text-success">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, hic!
-        <a href="#" class="text-reset">Lorem, ipsum dolor.</a>
+    <!-- flex column -->
+    <h1 class="display-6">Flex Column</h1>
+    <div class="d-flex flex-column my-5">
+        <div class="p-3 border border-info">Item 1</div>
+        <div class="p-3 border border-info">Item 2</div>
+        <div class="p-3 border border-info">Item 3</div>
     </div>
 
-    <div class="bg-warning text-wrap" style="width: 300px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla reiciendis atque eos dignissimos quisquam expedita provident corrupti doloribus distinctio natus?</div>
-    <br>
+    <!-- flex column reverse -->
+    <h1 class="display-6">Flex Column Reverse</h1>
+    <div class="d-flex flex-column-reverse">
+        <div class="p-3 border border-info">Item 1</div>
+        <div class="p-3 border border-info">Item 2</div>
+        <div class="p-3 border border-info">Item 3</div>
+    </div>
 
-    <div class="bg-warning text-nowrap" style="width: 300px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla reiciendis atque eos dignissimos quisquam expedita provident corrupti doloribus distinctio natus?</div>
-    <br>
+    <!-- flex row -->
+    <h1 class="display-6">Flex Row</h1>
+    <div class="d-flex flex-row my-5 bg-primary">
+        <div class="p-3 border border-secondary bg-light me-2">Item 1</div>
+        <div class="p-3 border border-secondary bg-light me-2">Item 2</div>
+        <div class="p-3 border border-secondary bg-light me-2">Item 3</div>
+    </div>
 
-    <p class="text-uppercase">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, illum!</p>
-    <p class="text-capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, maxime.</p>
-    <p class="text-lowercase">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, molestiae.</p>
-    
-    <!-- Flex -->
-    <br><br>
-    <h2 class="display-6">Line Height</h2>
-    <p class="lh-sm text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo obcaecati sunt laboriosam! Mollitia ipsam accusantium nesciunt similique autem, fuga harum eum illum eos ducimus cupiditate iure, exercitationem odit distinctio corrupti numquam. Excepturi, quibusdam similique? Ullam nihil sequi itaque necessitatibus iure asperiores architecto! Exercitationem sunt odit, quod inventore accusantium ad tenetur!</p>
+    <!-- flex row reverse -->
+    <h1 class="display-6">Flex Row Reverse</h1>
+    <div class="d-flex flex-row-reverse my-5 bg-primary">
+        <div class="p-3 border border-secondary bg-light me-2">Item 1</div>
+        <div class="p-3 border border-secondary bg-light me-2">Item 2</div>
+        <div class="p-3 border border-secondary bg-light me-2">Item 3</div>
+    </div>
 
-    <p class="lh-base text-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia placeat iure ex dolor illo sint aliquam accusamus, sunt fugit eligendi dolore minus, at numquam consequatur quam. Voluptatum minima maxime veritatis dignissimos aperiam quas id! Vero debitis reprehenderit et quasi atque! Quae esse dolorem laborum eaque, nemo perferendis eum. Corporis, culpa?</p>
+    <!-- justify content around -->
+    <h1 class="display-6">Justify Content Around</h1>
+    <div class="d-flex flex-row my-5 bg-danger justify-content-around">
+        <div class="p-3 border border-secondary bg-light">Item 1</div>
+        <div class="p-3 border border-secondary bg-light">Item 2</div>
+        <div class="p-3 border border-secondary bg-light">Item 3</div>
+    </div>
 
-    <p class="lh-lg text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi maxime numquam vel autem enim velit beatae veniam, minus odit. Voluptatibus, iure modi! Debitis, quibusdam corporis quod ad eos inventore facere ullam eum doloremque quam incidunt odit maiores vero officiis porro cupiditate, odio quae. Deserunt eos fugit facilis nesciunt nisi obcaecati? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea exercitationem doloremque tenetur asperiores dolores maiores suscipit mollitia, minima commodi at ab ducimus officiis, in placeat illum corrupti dolore. Expedita repellat aliquid, numquam assumenda consequatur non nulla velit voluptate sequi facilis dolorum molestias vel voluptatibus illum vero inventore itaque alias ullam?</p>
+    <!-- Justify content between -->
+    <h1 class="display-6">Justufy Content between</h1>
+    <div class="d-flex flex-row my-5 bg-dark justify-content-between">
+        <div class="p-3 border border-secondary bg-light">Item 1</div>
+        <div class="p-3 border border-secondary bg-light">Item 2</div>
+        <div class="p-3 border border-secondary bg-light">Item 3</div>
+    </div>
 
-    <p class="lh-1 text-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi maxime numquam vel autem enim velit beatae veniam, minus odit. Voluptatibus, iure modi! Debitis, quibusdam corporis quod ad eos inventore facere ullam eum doloremque quam incidunt odit maiores vero officiis porro cupiditate, odio quae. Deserunt eos fugit facilis nesciunt nisi obcaecati? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea exercitationem doloremque tenetur asperiores dolores maiores suscipit mollitia, minima commodi at ab ducimus officiis, in placeat illum corrupti dolore. Expedita repellat aliquid, numquam assumenda consequatur non nulla velit voluptate sequi facilis dolorum molestias vel voluptatibus illum vero inventore itaque alias ullam?</p>
+    <!-- Justify Content Start -->
+    <h1 class="display-6">Justify Content Start</h1>
+    <div class="d-flex flex-row my-5 bg-success justify-content-start">
+        <div class="p-3 border border-secondary bg-light">Item 1</div>
+        <div class="p-3 border border-secondary bg-light">Item 2</div>
+        <div class="p-3 border border-secondary bg-light">Item 3</div>
+    </div>
+
+    <!-- Justify Content End -->
+    <h1 class="display-6">Justify Content End</h1>
+    <div class="d-flex flex-row my-5 bg-info justify-content-end">
+        <div class="p-3 border border-secondary bg-light">Item 1</div>
+        <div class="p-3 border border-secondary bg-light">Item 2</div>
+        <div class="p-3 border border-secondary bg-light">Item 3</div>
+    </div>
+
+    <h1 class="display-6">Justify Content Center</h1>
+    <div class="d-flex flex-row my-5 bg-primary justify-content-center">
+        <div class="p-3 border border-secondary bg-light">Item 1</div>
+        <div class="p-3 border border-secondary bg-light">Item 2</div>
+        <div class="p-3 border border-secondary bg-light">Item 3</div>
+    </div>
+
+    <h1 class="display-6">Justify Content Evenly</h1>
+    <div class="d-flex flex-row my-5 bg-secondary justify-content-evenly">
+        <div class="p-3 border border-secondary bg-light">Item 1</div>
+        <div class="p-3 border border-secondary bg-light">Item 2</div>
+        <div class="p-3 border border-secondary bg-light">Item 3</div>
+    </div>
+
+    <!-- Order of items -->
+    <h1 class="display-6">Order children elements in parent element</h1>
+    <div class="d-flex flex-row my-5 bg-secondary justify-content-evenly">
+        <div class="p-3 border border-secondary bg-light order-3">Item 1</div>
+        <div class="p-3 border border-secondary bg-light order-1">Item 2</div>
+        <div class="p-3 border border-secondary bg-light order-2">Item 3</div>
+    </div>
+
+    <!-- use of auto margins -->
+    <h1 class="display-6">Use of auto margins</h1>
+    <div class="d-flex flex-row my-5 bg-warning justify-content-start">
+        <div class="p-3 border border-secondary bg-light">Item 1</div>
+        <div class="p-3 border border-secondary bg-light">Item 2</div>
+        <div class="p-3 border border-secondary bg-light ms-auto">Item 3</div>
+    </div>
+
+    <!-- align content -->
+    <h1 class="display-6">align content and apply flex wrap(allow children elements to move to next line)</h1>
+    <div class="d-flex flex-row my-5 bg-warning justify-content-evenly flex-wrap align-content-center" style="width: 70vw; height: 500px">
+        <div class="p-3 border border-secondary bg-light">Item 1</div>
+        <div class="p-3 border border-secondary bg-light">Item 2</div>
+        <div class="p-3 border border-secondary bg-light">Item 3</div>
+        <div class="p-3 border border-secondary bg-light">Item 4</div>
+        <div class="p-3 border border-secondary bg-light">Item 5</div>
+        <div class="p-3 border border-secondary bg-light">Item 6</div>
+        <div class="p-3 border border-secondary bg-light">Item 7</div>
+        <div class="p-3 border border-secondary bg-light">Item 8</div>
+        <div class="p-3 border border-secondary bg-light">Item 9</div>
+        <div class="p-3 border border-secondary bg-light">Item 10</div>
+        <div class="p-3 border border-secondary bg-light">Item 11</div>
+        <div class="p-3 border border-secondary bg-light">Item 12</div>
+        <div class="p-3 border border-secondary bg-light">Item 13</div>
+        <div class="p-3 border border-secondary bg-light">Item 14</div>
+        <div class="p-3 border border-secondary bg-light">Item 15</div>
+        <div class="p-3 border border-secondary bg-light">Item 16</div>
+        <div class="p-3 border border-secondary bg-light">Item 17</div>
+        <div class="p-3 border border-secondary bg-light">Item 18</div>
+        <div class="p-3 border border-secondary bg-light">Item 19</div>
+        <div class="p-3 border border-secondary bg-light">Item 20</div>
+        <div class="p-3 border border-secondary bg-light">Item 21</div>
+        <div class="p-3 border border-secondary bg-light">Item 22</div>
+    </div>
+
+    <h1 class="display-6">Use of Flex Grow</h1>
+    <div class="d-flex flex-row my-5 bg-danger justify-content-evenly">
+        <div class="p-3 border border-secondary bg-light">Item 1</div>
+        <div class="p-3 border border-secondary flex-grow-1 text-center bg-light">Item 2</div>
+        <div class="p-3 border border-secondary bg-light">Item 3</div>
+    </div>
+
+    <h1 class="display-6">Use of Flex Fill</h1>
+    <div class="d-flex flex-row my-5 bg-primary justify-content-evenly align-items-center" style="height: 300px;">
+        <div class="p-3 border border-secondary bg-light align-self-stretch">Item 1</div>
+        <div class="p-3 border border-secondary bg-light flex-fill">Item 2 Lorem ipsum dolor sit amet.</div>
+        <div class="p-3 border border-secondary bg-light align-self-end">Item 3</div>
+        <div class="p-3 border border-secondary bg-light align-self-baseline">Item 4</div>
+        <div class="p-3 border border-secondary bg-light align-self-baseline">Item 4</div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
