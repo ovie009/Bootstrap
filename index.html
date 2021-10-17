@@ -9,25 +9,376 @@
 </head>
 <body>
 
-    <!-- Containers -->
-    <div class="container my-5">
-        <!-- Normal container -->
-        <h2>Lorem ipsum dolor sit amet. <span class="text-info fs-6 fw-lighter">Normal Container, resposive container width, 100% for small devices</span></h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aperiam omnis, similique natus odit exercitationem eveniet! Animi, rem repellat dicta ab similique rerum voluptas nihil! Doloribus, recusandae perferendis omnis dolorum porro quasi nobis possimus amet ducimus id, minima labore quo incidunt consequuntur eveniet maiores dignissimos iure quam quod fugiat? Debitis sed distinctio necessitatibus molestias maxime at eveniet rem ipsum soluta, officiis ex tempore, aliquid dignissimos quidem autem placeat! Blanditiis, est.</p>
+    <!-- Base Nav -->
+    <!-- Basic nav with children element with nav-item class -->
+    <ul class="nav border border-bottom">
+        <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">Active</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Disabled</a>
+        </li>
+    </ul>
+    
+    <!-- Basiv nav without nav-item class, since dispaly flex is applied to the nav class, the children element would appear the same whether using nav-item or nav-link -->
+    <ul class="nav border border-bottom">
+        <a href="#" class="nav-link">Lorem, ipsum.</a>
+        <a href="#" class="nav-link">Lorem, ipsum dolor.</a>
+        <a href="#" class="nav-link">Lorem.</a>
+        <a href="#" class="nav-link">Lorem.</a>
+        <a href="#" class="nav-link">Lorem ipsum dolor sit amet.</a>
+    </ul>
+    
+    <!-- Justify content -->
+    <!-- justify content center -->
+    <ul class="nav border border-bottom justify-content-center">
+        <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">Active</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Disabled</a>
+        </li>
+    </ul>
+
+    <!-- justify content end -->
+    <ul class="nav border border-bottom justify-content-end">
+        <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">Active</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Disabled</a>
+        </li>
+    </ul>
+
+    <!-- justify content evenly -->
+    <ul class="nav border border-bottom justify-content-evenly">
+        <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">Active</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Disabled</a>
+        </li>
+    </ul>
+
+    <!-- justify Content around -->
+    <ul class="nav border border-bottom justify-content-around">
+        <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">Active</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Disabled</a>
+        </li>
+    </ul>
+
+    <!-- justify content between -->
+    <ul class="nav border border-bottom justify-content-between">
+        <a href="#" class="nav-link">Lorem, ipsum.</a>
+        <a href="#" class="nav-link">Lorem, ipsum dolor.</a>
+        <a href="#" class="nav-link">Lorem.</a>
+        <a href="#" class="nav-link">Lorem.</a>
+        <a href="#" class="nav-link">Lorem ipsum dolor sit amet.</a>
+    </ul>
+
+    <!-- Vertical Nav -->
+    <ul class="nav border border-bottom flex-column">
+        <a href="#" class="nav-link">Lorem, ipsum.</a>
+        <a href="#" class="nav-link">Lorem, ipsum dolor.</a>
+        <a href="#" class="nav-link">Lorem.</a>
+        <a href="#" class="nav-link">Lorem.</a>
+        <a href="#" class="nav-link">Lorem ipsum dolor sit amet.</a>
+    </ul>
+    
+    <!-- everything above can be easily achieved using the nav tag -->
+    <nav class="nav border border-bottom flex-column">
+        <a href="#" class="nav-link">Lorem, ipsum.</a>
+        <a href="#" class="nav-link">Lorem, ipsum dolor.</a>
+        <a href="#" class="nav-link">Lorem.</a>
+        <a href="#" class="nav-link">Lorem.</a>
+        <a href="#" class="nav-link">Lorem ipsum dolor sit amet.</a>
+    </nav>
+    
+    <!-- Nav Tabs -->
+    <ul class="nav nav-tabs border border-bottom justify-content-end my-5">
+        <li class="nav-item">
+            <a href="#" class="nav-link " aria-current="page">Active</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link active">Link</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Disabled</a>
+        </li>
+    </ul>
+    
+    <!-- Nav Tabs -->
+    <ul class="nav nav-pills border border-bottom justify-content-end my-5">
+        <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">Active</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Disabled</a>
+        </li>
+    </ul>
+
+    
+    <!-- Nav fill -->
+    <ul class="nav border border-bottom nav-fill">
+        <!-- nav-fill styling appears to have the same result as applying justify-content-around -->
+        <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">Active</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Disabled</a>
+        </li>
+    </ul>
+
+    <!-- Nav Justified -->
+    <ul class="nav border border-bottom nav-pills nav-justified my-5 align-middle align-items-center">
+        <!-- To make all children elements in the mav have the same width -->
+        <a href="#" class="nav-link active" aria-current="page">Lorem, ipsum dolor.</a>
+        <a href="#" class="nav-link">Lorem, ipsum.</a>
+        <a href="#" class="nav-link">Lorem ipsum dolor sit amet.</a>
+        <a href="#" class="nav-link">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+        <a href="#" class="nav-link disabled">Lorem.</a>
+    </ul>
+
+    <!-- Navs with Dropdowns -->
+    <nav class="nav nav-pills my-5 justify-content-end">
+        <li class="nav-item">
+            <!-- active class has to be on the element with the nav-link class -->
+            <a href="#" class="nav-link">Active</a>
+        </li>
+        <li class="nav-item dropdown">
+            <!-- Multiple elements can also possess the active class -->
+            <a href="#" class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">Action</a></li>
+                <li><a href="#" class="dropdown-item">Another action</a></li>
+                <li><a href="#" class="dropdown-item">Something else here</a></li>
+                <li>
+                    <hr class="dropdpwn-divider">
+                </li>
+                <li><a href="#" class="dropdown-item">Seperated link</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link" disabled>Disabled</a>
+        </li>
+    </nav>
+
+    <!-- JAVASRIPT BEHAVIOR -->
+    <!-- tabs using ul tag -->
+    <ul class="nav nav-tabs" role="tablist" id="tab">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" role="tab" data-bs-toggle="tab" data-bs-target="#home" type="button" aria-controls="home" aria-selected="true">Home</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" role="tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" aria-controls="profile" aria-selected="false">Profile</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" role="tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" aria-controls="contact" aria-selected="false">Contact</button>
+        </li>
+    </ul>
+
+    <div class="tab-content text-secondary p-3 mb-5" id="tab-content">
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="home-tab">
+            <h1 class="display-6">Profile</h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique nisi earum, quas sint perferendis nulla labore eos vero rerum dolore blanditiis assumenda mollitia atque! Iste accusantium eius ducimus? Magni illo ratione repudiandae explicabo minima! Nisi voluptate autem illo totam quidem!
+            </p>
+        </div>
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="profile-tab">
+            <h1 class="display-6">Home</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente at optio architecto provident maxime illo dolor quia obcaecati molestiae atque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At earum repudiandae nostrum maxime, assumenda odit placeat perferendis doloremque id officiis quo vero, aliquid quis accusantium cum deserunt! Laborum quas tenetur in velit quo ab iure? Aliquam nulla similique repellendus amet unde corrupti, rem earum, ipsum accusantium repellat quaerat beatae culpa!
+            </p>
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <h1 class="display-6">Contact</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate eum vel repudiandae fuga praesentium placeat iusto blanditiis! Reiciendis, nobis, aspernatur nam blanditiis hic eos quos perferendis, omnis debitis ducimus praesentium? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium culpa vero animi exercitationem repellendus. Laboriosam, ratione corrupti!
+            </p>
+        </div>
     </div>
 
+    <!-- tabs using nav tag, the role="tablist" applied to a nav tag overides the elements native role, so it can be used in this fashion-->
+    <nav>
+        <div class="nav nav-tabs" role="tablist">
+            <button class="nav-link active" id="nav-home-tab" type="button" role="tab" data-bs-target="#nav-home" data-bs-toggle="tab" aria-selected="true" aria-controls="nav-home">Home</button>
+            <button class="nav-link" id="nav-profile-tab" type="button" role="tab" data-bs-target="#nav-profile" data-bs-toggle="tab" aria-selected="true" aria-controls="nav-profile">Profile</button>
+            <button class="nav-link" id="nav-contact-tab" type="button" role="tab" data-bs-target="#nav-contact" data-bs-toggle="tab" aria-selected="true" aria-controls="nav-contact">Contact</button>
+        </div>
+    </nav>
 
-    <div class="container-fluid my-5">
-        <!-- Fluid container -->
-        <h2>Lorem ipsum dolor sit amet. <span class="text-info fs-6 fw-lighter">Fluid Container, 100% width all the time</span></h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aperiam omnis, similique natus odit exercitationem eveniet! Animi, rem repellat dicta ab similique rerum voluptas nihil! Doloribus, recusandae perferendis omnis dolorum porro quasi nobis possimus amet ducimus id, minima labore quo incidunt consequuntur eveniet maiores dignissimos iure quam quod fugiat? Debitis sed distinctio necessitatibus molestias maxime at eveniet rem ipsum soluta, officiis ex tempore, aliquid dignissimos quidem autem placeat! Blanditiis, est.</p>
+    <div class="tab-content p-3 mb-5" id="nav-tab-content">
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="home-tab">
+            <h6>Profile</h6>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique nisi earum, quas sint perferendis nulla labore eos vero rerum dolore blanditiis assumenda mollitia atque! Iste accusantium eius ducimus? Magni illo ratione repudiandae explicabo minima! Nisi voluptate autem illo totam quidem!
+            </p>
+        </div>
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="profile-tab">
+            <h6>Home</h6>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente at optio architecto provident maxime illo dolor quia obcaecati molestiae atque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At earum repudiandae nostrum maxime, assumenda odit placeat perferendis doloremque id officiis quo vero, aliquid quis accusantium cum deserunt! Laborum quas tenetur in velit quo ab iure? Aliquam nulla similique repellendus amet unde corrupti, rem earum, ipsum accusantium repellat quaerat beatae culpa!
+            </p>
+        </div>
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="contact-tab">
+            <h6>Contact</h6>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate eum vel repudiandae fuga praesentium placeat iusto blanditiis! Reiciendis, nobis, aspernatur nam blanditiis hic eos quos perferendis, omnis debitis ducimus praesentium? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium culpa vero animi exercitationem repellendus. Laboriosam, ratione corrupti!
+            </p>
+        </div>
+    </div>
+    
+    <!-- the nav-tabs class can easily be changed to a nav-pills class for a nav pills styling, as shown below -->
+    <ul class="nav nav-pills" role="tablist" id="pills">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-pill" role="tab" data-bs-toggle="pill" data-bs-target="#pill-home" type="button" aria-controls="home" aria-selected="true">Home</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-pill" role="tab" data-bs-toggle="pill" data-bs-target="#pill-profile" type="button" aria-controls="profile" aria-selected="false">Profile</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-pill" role="tab" data-bs-toggle="pill" data-bs-target="#pill-contact" type="button" aria-controls="contact" aria-selected="false">Contact</button>
+        </li>
+    </ul>
+
+    <div class="tab-content text-secondary p-3 mb-5" id="pill-content">
+        <div class="tab-pane fade" id="pill-profile" role="tabpanel" aria-labelledby="home-tab">
+            <h1 class="display-6">Profile</h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique nisi earum, quas sint perferendis nulla labore eos vero rerum dolore blanditiis assumenda mollitia atque! Iste accusantium eius ducimus? Magni illo ratione repudiandae explicabo minima! Nisi voluptate autem illo totam quidem!
+            </p>
+        </div>
+        <div class="tab-pane fade show active" id="pill-home" role="tabpanel" aria-labelledby="profile-tab">
+            <h1 class="display-6">Home</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente at optio architecto provident maxime illo dolor quia obcaecati molestiae atque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At earum repudiandae nostrum maxime, assumenda odit placeat perferendis doloremque id officiis quo vero, aliquid quis accusantium cum deserunt! Laborum quas tenetur in velit quo ab iure? Aliquam nulla similique repellendus amet unde corrupti, rem earum, ipsum accusantium repellat quaerat beatae culpa!
+            </p>
+        </div>
+        <div class="tab-pane fade" id="pill-contact" role="tabpanel" aria-labelledby="contact-tab">
+            <h1 class="display-6">Contact</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate eum vel repudiandae fuga praesentium placeat iusto blanditiis! Reiciendis, nobis, aspernatur nam blanditiis hic eos quos perferendis, omnis debitis ducimus praesentium? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium culpa vero animi exercitationem repellendus. Laboriosam, ratione corrupti!
+            </p>
+        </div>
     </div>
 
-    <div class="container-xl my-5">
-        <!-- Fluid container -->
-        <h2>Lorem ipsum dolor sit amet. <span class="text-info fs-6 fw-lighter">Extra Large Container, 100% screen width is extra large</span></h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aperiam omnis, similique natus odit exercitationem eveniet! Animi, rem repellat dicta ab similique rerum voluptas nihil! Doloribus, recusandae perferendis omnis dolorum porro quasi nobis possimus amet ducimus id, minima labore quo incidunt consequuntur eveniet maiores dignissimos iure quam quod fugiat? Debitis sed distinctio necessitatibus molestias maxime at eveniet rem ipsum soluta, officiis ex tempore, aliquid dignissimos quidem autem placeat! Blanditiis, est.</p>
+    <!-- tabs using nav tag, the role="tablist" applied to a nav tag overides the elements native role, so it can be used in this fashion-->
+    <nav>
+        <div class="nav nav-pills" role="tablist">
+            <button class="nav-link active" id="nav-home-pill" type="button" role="tab" data-bs-target="#nav-pill-home" data-bs-toggle="pill" aria-selected="true" aria-controls="nav-pill-home">Home</button>
+            <button class="nav-link" id="nav-profile-pill" type="button" role="tab" data-bs-target="#nav-pill-profile" data-bs-toggle="pill" aria-selected="true" aria-controls="nav-pill-profile">Profile</button>
+            <button class="nav-link" id="nav-contact-pill" type="button" role="tab" data-bs-target="#nav-pill-contact" data-bs-toggle="pill" aria-selected="true" aria-controls="nav-pill-contact">Contact</button>
+        </div>
+    </nav>
+
+    <div class="tab-content p-3 mb-5" id="nav-pill-content">
+        <div class="tab-pane fade" id="nav-pill-profile" role="tabpanel" aria-labelledby="home-tab">
+            <h6>Profile</h6>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique nisi earum, quas sint perferendis nulla labore eos vero rerum dolore blanditiis assumenda mollitia atque! Iste accusantium eius ducimus? Magni illo ratione repudiandae explicabo minima! Nisi voluptate autem illo totam quidem!
+            </p>
+        </div>
+        <div class="tab-pane fade show active" id="nav-pill-home" role="tabpanel" aria-labelledby="profile-tab">
+            <h6>Home</h6>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente at optio architecto provident maxime illo dolor quia obcaecati molestiae atque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At earum repudiandae nostrum maxime, assumenda odit placeat perferendis doloremque id officiis quo vero, aliquid quis accusantium cum deserunt! Laborum quas tenetur in velit quo ab iure? Aliquam nulla similique repellendus amet unde corrupti, rem earum, ipsum accusantium repellat quaerat beatae culpa!
+            </p>
+        </div>
+        <div class="tab-pane fade" id="nav-pill-contact" role="tabpanel" aria-labelledby="contact-tab">
+            <h6>Contact</h6>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate eum vel repudiandae fuga praesentium placeat iusto blanditiis! Reiciendis, nobis, aspernatur nam blanditiis hic eos quos perferendis, omnis debitis ducimus praesentium? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium culpa vero animi exercitationem repellendus. Laboriosam, ratione corrupti!
+            </p>
+        </div>
     </div>
+
+    <!-- verticl tabs -->
+    <div class="d-flex justify-content-start align-items-top">
+        <ul class="nav nav-pills flex-column" role="tablist" id="v-tab">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="v-home-tab" role="tab" data-bs-toggle="pill" data-bs-target="#v-home" type="button" aria-controls="home" aria-selected="true">Home</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="v-profile-tab" role="tab" data-bs-toggle="pill" data-bs-target="#v-profile" type="button" aria-controls="profile" aria-selected="false">Profile</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="v-contact-tab" role="tab" data-bs-toggle="pill" data-bs-target="#v-contact" type="button" aria-controls="contact" aria-selected="false">Contact</button>
+            </li>
+        </ul>
+    
+        <div class="tab-content text-secondary px-3 mb-5" id="v-tab-content">
+            <div class="tab-pane fade" id="v-profile" role="tabpanel" aria-labelledby="home-tab">
+                <h1 class="display-6">Profile</h1>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique nisi earum, quas sint perferendis nulla labore eos vero rerum dolore blanditiis assumenda mollitia atque! Iste accusantium eius ducimus? Magni illo ratione repudiandae explicabo minima! Nisi voluptate autem illo totam quidem!
+                </p>
+            </div>
+            <div class="tab-pane fade show active" id="v-home" role="tabpanel" aria-labelledby="profile-tab">
+                <h1 class="display-6">Home</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente at optio architecto provident maxime illo dolor quia obcaecati molestiae atque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At earum repudiandae nostrum maxime, assumenda odit placeat perferendis doloremque id officiis quo vero, aliquid quis accusantium cum deserunt! Laborum quas tenetur in velit quo ab iure? Aliquam nulla similique repellendus amet unde corrupti, rem earum, ipsum accusantium repellat quaerat beatae culpa!
+                </p>
+            </div>
+            <div class="tab-pane fade" id="v-contact" role="tabpanel" aria-labelledby="contact-tab">
+                <h1 class="display-6">Contact</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate eum vel repudiandae fuga praesentium placeat iusto blanditiis! Reiciendis, nobis, aspernatur nam blanditiis hic eos quos perferendis, omnis debitis ducimus praesentium? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium culpa vero animi exercitationem repellendus. Laboriosam, ratione corrupti!
+                </p>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
