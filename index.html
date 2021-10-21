@@ -1,145 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Document</title>
-    <style>
-        section{
-            padding: 60px 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Document</title>
+  <style>
+    section{
+      padding: 60px 0;
+    }
+  </style>
 </head>
 <body>
 
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-md navbar-light">
-        <div class="container-xxl">
-            <a href="#intro" class="navbar-brand">
-                <span class="fw-bold text-secondary">
-                    Net Ninja Pro - The Book
-                </span>
-            </a>
-            <!-- Toggle Button for mobile nav -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle Navigation">
-                <span class="navbar-toggler-icon"> </span>
-            </button>
-
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-                <ul class="navbar-nav">
-                    <li class="navbar-item">
-                        <a href="#topics" class="nav-link">About The Book</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#reviews" class="nav-link">Reviews</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#contact" class="nav-link">Get in touch</a>
-                    </li>
-                    <li class="navbar-item d-md-none">
-                        <a href="#pricing" class="nav-link">Pricing</a>
-                    </li>
-                    <li class="navbar-item ms-2 d-none d-md-inline">
-                        <a href="#pricing" class="btn btn-secondary">Buy Now</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Main image & intro text -->
-    <section id="intro">
-        <div class="container-lg">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-md-5 text-center text-md-start">
-                    <h1>
-                        <div class="display-2">Black-Belt</div>
-                        <div class="display-5 text-muted">Your Coding Skills</div>
-                    </h1>
-                    <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
-                </div>
-                <div class="col-md-5 text-center d-none d-md-block ">
-                    <img class="img-fluid rounded" src="assets/art.jpg" alt="ebook Cover">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- pricing plans -->
-    <section id="pricing" class="bg-light mt-5">
-      <div class="container-lg">
-        <div class="text-center">
-          <h3>Pricing Plans</h3>
-          <p class="lead text-muted">Choose a pricing plan to suit you</p>
-        </div>
-
-        <div class="row my-5 align-items-center justify-content-center g-0">
-          <div class="col-8 col-lg-4 col-xl-3">
-            <div class="card border-0">
-              <div class="card-body text-center py-4">
-                <h4 class="card-title">Starter Edition</h4>
-                <p class="lead card-subtitle">ebook download only</p>
-                <p class="display-5 my-4 text-primary fw-bold">$12.99</p>
-                <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, beatae!</p>
-                <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a> 
-              </div>
-            </div>
-          </div>
-
-          <div class="col-9 col-lg-4">
-            <div class="card border-2 border-primary">
-              <div class="card-header text-center text-primary">Most Popular</div>
-              <div class="card-body text-center py-4">
-                <h4 class="card-title">Complete Edition</h4>
-                <p class="lead card-subtitle">ebook download & all updates</p>
-                <p class="display-5 my-4 text-primary fw-bold">$18.99</p>
-                <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, beatae!</p>
-                <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a> 
-              </div>
-            </div>
-          </div>
-
-          <div class="col-8 col-lg-4 col-xl-3">
-            <div class="card border-0">
-              <div class="card-body text-center py-4">
-                <h4 class="card-title">Ultimate Edition</h4>
-                <p class="lead card-subtitle">download, updates & extras</p>
-                <p class="display-5 my-4 text-primary fw-bold">$24.99</p>
-                <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, beatae!</p>
-                <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a> 
-              </div>
-            </div>
+  <!-- accordion -->
+  <div class="container-sm">
+    <h6 class="display-6">Accordion</h6>
+    <h6>Accordion Flush</h6>
+    <div class="accordion mb-5 accordion-flush" id="accordionFlushParent1">
+  
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flushHeading1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flushCollapse1" aria-expanded="true" aria-controls="flushCollapse1">
+            Accordion Item 1
+          </button>
+        </h2>
+  
+        <div class="accordion-collapse collapse" id="flushCollapse1" aria-labelledby="flushHeading1" data-bs-parent="#accordionFlushParent1">
+          <div class="accordion-body">
+            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quia voluptas tempore nam, cum voluptatum aliquid, minus laudantium placeat ab dolores voluptatem odit amet maiores sit? Reiciendis commodi exercitationem minus?
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- topics at a glance -->
-    <section id="topics">
-      <div class="container-md">
-        <div class="text-center">
-          <h2>Inside the book</h2>
-          <p class="lead text-muted">A quick glance at the topic you'll learn</p>
-        </div>
-
-        <div class="row my-5 g-5 justify-content-around">
-          <div class="col-6 col-lg-4">
-            <img src="assets/art.jpg" alt="art" class="img-fluid">
-          </div>
-
-          <!-- accordion -->
-          <div class="accordion" id="chapters">
-            <div class="accordion-item"></div>
+  
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flushHeading2">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flushCollapse2" aria-expanded="true" aria-controls="flushCollapse2">
+            Accordion Item 2
+          </button>
+        </h2>
+  
+        <div class="accordion-collapse collapse" id="flushCollapse2" aria-labelledby="flushHeading1" data-bs-parent="#accordionFlushParent1">
+          <div class="accordion-body">
+            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quia voluptas tempore nam, cum voluptatum aliquid, minus laudantium placeat ab dolores voluptatem odit amet maiores sit? Reiciendis commodi exercitationem minus?
           </div>
         </div>
       </div>
-    </section>
+  
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flushHeading3">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flushCollapse3" aria-expanded="true" aria-controls="flushCollapse3">
+            Accordion Item 3
+          </button>
+        </h2>
+  
+        <div class="accordion-collapse collapse" id="flushCollapse3" aria-labelledby="flushHeading1" data-bs-parent="#accordionFlushParent1">
+          <div class="accordion-body">
+            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quia voluptas tempore nam, cum voluptatum aliquid, minus laudantium placeat ab dolores voluptatem odit amet maiores sit? Reiciendis commodi exercitationem minus?
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="accordion" id="accordionParent1">
+      <h6>Basic Accordion</h6>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+            Accordion Item 1
+          </button>
+        </h2>
+  
+        <div class="accordion-collapse collapse" id="collapse1" aria-labelledby="heading1" data-bs-parent="#accordionParent1">
+          <div class="accordion-body">
+            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quia voluptas tempore nam, cum voluptatum aliquid, minus laudantium placeat ab dolores voluptatem odit amet maiores sit? Reiciendis commodi exercitationem minus?
+          </div>
+        </div>
+      </div>
+  
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading2">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+            Accordion Item 2
+          </button>
+        </h2>
+  
+        <div class="accordion-collapse collapse show" id="collapse2" aria-labelledby="heading1" data-bs-parent="#accordionParent1">
+          <div class="accordion-body">
+            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quia voluptas tempore nam, cum voluptatum aliquid, minus laudantium placeat ab dolores voluptatem odit amet maiores sit? Reiciendis commodi exercitationem minus?
+          </div>
+        </div>
+      </div>
+  
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading3">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+            Accordion Item 3
+          </button>
+        </h2>
+  
+        <div class="accordion-collapse collapse" id="collapse3" aria-labelledby="heading1" data-bs-parent="#accordionParent1">
+          <div class="accordion-body">
+            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quia voluptas tempore nam, cum voluptatum aliquid, minus laudantium placeat ab dolores voluptatem odit amet maiores sit? Reiciendis commodi exercitationem minus?
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Omit the data-bs-parent attribute on each .accordion-collapse to make accordion items stay open when another item is opened. -->
+    <div class="accordion my-5" id="accordionParent2">
+      <h6>Always open accordion</h6>
+  
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingAlwaysOpen1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAlways1" aria-expanded="true" aria-controls="collapseAlways1">
+            Accordion Item 1
+          </button>
+        </h2>
+  
+        <div class="accordion-collapse collapse" id="collapseAlways1" aria-labelledby="headingAlwaysOpen1">
+          <div class="accordion-body">
+            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quia voluptas tempore nam, cum voluptatum aliquid, minus laudantium placeat ab dolores voluptatem odit amet maiores sit? Reiciendis commodi exercitationem minus?
+          </div>
+        </div>
+      </div>
+  
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading2">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAlways2" aria-expanded="true" aria-controls="collapseAlways2">
+            Accordion Item 2
+          </button>
+        </h2>
+  
+        <div class="accordion-collapse collapse show" id="collapseAlways2" aria-labelledby="heading2">
+          <div class="accordion-body">
+            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quia voluptas tempore nam, cum voluptatum aliquid, minus laudantium placeat ab dolores voluptatem odit amet maiores sit? Reiciendis commodi exercitationem minus?
+          </div>
+        </div>
+      </div>
+  
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading3">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAlways3" aria-expanded="true" aria-controls="collapseAlways3">
+            Accordion Item 3
+          </button>
+        </h2>
+  
+        <div class="accordion-collapse collapse" id="collapseAlways3" aria-labelledby="heading1">
+          <div class="accordion-body">
+            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quia voluptas tempore nam, cum voluptatum aliquid, minus laudantium placeat ab dolores voluptatem odit amet maiores sit? Reiciendis commodi exercitationem minus?
+          </div>
+        </div>
+      </div>
+    </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
